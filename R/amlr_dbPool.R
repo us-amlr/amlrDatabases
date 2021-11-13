@@ -21,7 +21,7 @@
 #'
 #' @export
 amlr_dbPool <- function(Database, Driver = "SQL Server", Server = "swc-estrella-s",
-                                  idleTimeout = 3600000, ...) {
+                        idleTimeout = 3600000, ...) {
   try(pool::dbPool(
     drv = odbc::odbc(),
     Driver = Driver,
